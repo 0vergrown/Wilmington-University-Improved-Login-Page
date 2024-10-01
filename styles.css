@@ -1,0 +1,153 @@
+/* Set the background image */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://fs.wilmu.edu/adfs/portal/illustration/illustration.jpg?id=50BD54A02A385035C36A50460951805216A19FF9EFB72672BFA4DE3D91436231');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* White square box in the center */
+.login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    min-height: 264px;
+    min-width: 320px;
+    max-width: 412px;
+    width: 360px;
+    padding: 36px;
+    transition: transform 0.6s ease-in-out;
+    perspective: 1000px;
+    transform-style: preserve-3d;  /* Ensure the 3D effect for the flip */
+}
+
+/* Flip the entire box when the class is added */
+.flipped {
+    transform: translate(-50%, -50%) rotateY(180deg); /* Flips the whole box */
+}
+
+/* Flip card inner container */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+/* Front and back content */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    transform: rotateY(0deg);
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Logo styles */
+.login-logo img {
+    width: 137px;
+    height: 36px;
+    margin-bottom: 16px;
+}
+
+/* Text content */
+.login-content p {
+    font-family: Arial, sans-serif;
+    margin: 12px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-container span {
+    font-size: 14px;
+    margin-left: 8px;
+    color: #666;
+}
+
+.input-container input.valid {
+    border-color: green;
+}
+
+/* Error message */
+#errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 0; /* Initially on the right side */
+    transition: left 0.5s ease, right 0.5s ease;  /* Smoother transition */
+}
+
+button:hover {
+    background-color: #004d00;
+}
+
+/* Green links */
+.link {
+    color: green;
+    cursor: pointer;
+}
+
+button.invalid-shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Sliding button animation */
+button.slide-left {
+    right: auto;
+    left: 0;
+    transition: left 0.5s ease, right 0.5s ease; /* Transition left/right for smooth slide */
+}
+
+button.slide-right {
+    left: auto;
+    right: 0;
+    transition: left 0.5s ease, right 0.5s ease; /* Transition left/right for smooth slide */
+}

