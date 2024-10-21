@@ -21,23 +21,11 @@ This project addresses usability issues in the existing Wilmington University lo
 
 **Responsive Design**: The login box is centered and responsive, adapting to various screen sizes and devices.
 ## How It Works
-1. Email Entry:
+1. **Email Entry**: Users must enter a valid email address ending in @my.wilmu.edu. If the email is invalid or does not match the required pattern, the "Next" button shakes and slides to the opposite side of the white box. A correct email (currently set to "admin" for testing) flips the login box to reveal the password field.
 
-Users must enter a valid email address ending in @my.wilmu.edu.
+2. **Password Entry**: The user is prompted to enter their password. If the password is incorrect, the "Enter" button shakes and slides, similar to the email validation feedback.
 
-If the email is invalid or does not match the required pattern, the "Next" button shakes and slides to the opposite side of the white box.
-
-A correct email (currently set to "admin" for testing) flips the login box to reveal the password field.
-
-2. Password Entry:
-
-The user is prompted to enter their password.
-
-If the password is incorrect, the "Enter" button shakes and slides, similar to the email validation feedback.
-
-3. Button Animations:
-
-The sliding buttons add a playful interaction to the login experience, moving left or right with incorrect input.
+3. **Button Animations**: The sliding buttons add a playful interaction to the login experience, moving left or right with incorrect input.
 ## File Structure
 index.html – The main structure of the login page.
 
