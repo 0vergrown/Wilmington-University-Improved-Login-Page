@@ -53,4 +53,4 @@ JavaScript (Vanilla JS) – For client-side form validation, interactive animati
 
 **Accessibility Enhancements**: Improve accessibility for users with disabilities, ensuring keyboard navigation and screen reader compatibility.
 ## License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the Creative Commons Zero v1.0 Universal License.
