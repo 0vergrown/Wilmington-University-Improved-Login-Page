@@ -34,9 +34,9 @@ styles.css – Contains styles for layout, animations, and responsive behavior.
 script.js – JavaScript to handle form validation, button animations, and the flip transition.
 ## How to Run the Project
 1. Clone the repository:
-
+```bash
 git clone https://github.com/your-username/Wilmington-University-Improved-Login-Page.git
-
+```
 
 2. Open the HTML file: Open index.html in a browser to interact with the redesigned login page.
 ## Technologies Used
