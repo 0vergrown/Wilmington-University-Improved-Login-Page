@@ -47,7 +47,7 @@ script.js – JavaScript to handle form validation, button animations, and the f
 ## How to Run the Project
 1. Clone the repository:
 
-git clone https://github.com/your-username/University-Login-Redesign.git
+git clone https://github.com/your-username/Wilmington-University-Improved-Login-Page.git
 
 
 2. Open the HTML file: Open index.html in a browser to interact with the redesigned login page.
